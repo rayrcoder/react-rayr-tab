@@ -1,4 +1,4 @@
 import RayrTab from './RayrTab.js';
-import RayrTabPanel from './RayrTabPane';
+import RayrTabPane from './RayrTabPane';
 
-export {RayrTab, RayrTabPanel};
+export {RayrTab, RayrTabPane};
