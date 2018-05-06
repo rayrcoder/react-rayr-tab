@@ -4,12 +4,12 @@ import PropTypes from "prop-types";
 
 class TabPane extends React.Component {
     static propTypes = {
-        tab: React.PropTypes.oneOfType([
-            React.PropTypes.string,
-            React.PropTypes.node
+        tab: PropTypes.oneOfType([
+            PropTypes.string,
+            PropTypes.node
         ]).isRequired,
-        order: React.PropTypes.string.isRequired,
-        disable: React.PropTypes.bool,
+        order: PropTypes.string.isRequired,
+        disable: PropTypes.bool,
         isActive: PropTypes.bool
     };
 

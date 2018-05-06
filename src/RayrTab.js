@@ -15,14 +15,14 @@ const Selector = (classPrefix) => ({
 class RayrTab extends React.Component {
 
     static propTypes = {
-        classPrefix: React.PropTypes.string,
-        className: React.PropTypes.string,
-        defaultActiveIndex: React.PropTypes.number,// 默认激活index，组件内更新
-        activeIndex: React.PropTypes.number,// 默认激活index，组件外更新
-        onChange: React.PropTypes.func,
-        children: React.PropTypes.oneOfType([
-            React.PropTypes.arrayOf(React.PropTypes.node),
-            React.PropTypes.node
+        classPrefix: PropTypes.string,
+        className: PropTypes.string,
+        defaultActiveIndex: PropTypes.number,// 默认激活index，组件内更新
+        activeIndex: PropTypes.number,// 默认激活index，组件外更新
+        onChange: PropTypes.func,
+        children: PropTypes.oneOfType([
+            PropTypes.arrayOf(PropTypes.node),
+            PropTypes.node
         ])
     };
 
@@ -145,7 +145,7 @@ class RayrTab extends React.Component {
 class TabNav extends React.Component {
 
     static propTypes = {
-        classPrefix: React.PropTypes.string,
+        classPrefix: PropTypes.string,
         panels: PropTypes.node,
         activeIndex: PropTypes.number
     };
@@ -217,7 +217,7 @@ class TabNav extends React.Component {
 
 class TabContent extends React.Component {
     static propTypes = {
-        classPrefix: React.PropTypes.string,
+        classPrefix: PropTypes.string,
         panels: PropTypes.node,
         activeIndex: PropTypes.number
     };
