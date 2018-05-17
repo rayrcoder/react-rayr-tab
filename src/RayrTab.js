@@ -2,16 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-const Selector = (classPrefix) => ({
-    PREFIX: classPrefix,
-    NAV: `${classPrefix}-nav`,
-    CONTENT: `${classPrefix}-content`,
-    TAB: `${classPrefix}-tab`,
-    PANEL: `${classPrefix}-panel`,
-    ACTIVE: `${classPrefix}-active`,
-    DISABLED: `${classPrefix}-disable`
-});
-
 class RayrTab extends React.Component {
 
     static propTypes = {
@@ -43,8 +33,10 @@ class RayrTab extends React.Component {
         let activeIndex;
 
         if ('activeIndex' in currProps) {
+            // 如果外部参数中有activeIndex，则使用外部传入的参数
             activeIndex = currProps.activeIndex;
         } else if ('defaultActiveIndex' in currProps) {
+            // 当activeIndex不存在与外部传入参数的时候，使用默认的内部参数
             activeIndex = currProps.defaultActiveIndex;
         }
 
@@ -116,29 +108,6 @@ class RayrTab extends React.Component {
                 {this.renderTabContent()}
             </div>
         );
-
-        // return (
-        //     <div className="rayr-tab">
-        //         <div className="tabs-bar">
-        //             <ul className="tabs-nav">
-        //                 <li className="tabs-tab">菜单-1</li>
-        //                 <li className="tabs-tab">菜单-2</li>
-        //                 <li className="tabs-tab">菜单-3</li>
-        //             </ul>
-        //         </div>
-        //         <div className="tabs-content">
-        //             <div className="tabs-panel">
-        //                 Fist menu 的内容
-        //             </div>
-        //             <div className="tabs-panel">
-        //                 Second menu 的内容
-        //             </div>
-        //             <div className="tabs-panel">
-        //                 Third menu 的内容
-        //             </div>
-        //         </div>
-        //     </div>
-        // );
     }
 }
 
