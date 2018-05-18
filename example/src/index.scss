@@ -1,0 +1,40 @@
+.demo-wrapper{
+    .tab-box{
+        width: 400px;
+    }
+    .tab-wrapper{
+        .pane-wrapper{
+            // border: 1px solid #ddd;
+            .nav-pane-item{
+                margin: 0 10px;
+                padding:  2px;
+            }
+        }
+    }
+}
+$prefix : 'mytab';
+.#{$prefix}{
+    &-bar{
+        width: 100%;
+    }
+    &-bar &-nav{
+        width: auto;
+    }
+    &-nav &-tab{
+        list-style: none;
+        cursor: pointer;
+    }
+    &-nav &-active{
+        color: red;
+        display: block;
+    }
+    &-content{
+        width: auto;
+    }
+    &-content > &-panel{
+        display: none;
+    }
+    &-content  &-active{
+        display: block;
+    }
+}

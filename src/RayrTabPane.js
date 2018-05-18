@@ -10,7 +10,8 @@ class TabPane extends React.Component {
         ]).isRequired,
         order: PropTypes.string.isRequired,
         disable: PropTypes.bool,
-        isActive: PropTypes.bool
+        isActive: PropTypes.bool,
+        className: PropTypes.string
     };
 
     render() {
@@ -26,6 +27,7 @@ class TabPane extends React.Component {
             <div
                 role={"tabpanel"}
                 className={classes}
+                {...this.props.className}
                 aria-hidden={!isActive}>
                 {children}
             </div>

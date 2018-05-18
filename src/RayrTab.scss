@@ -1,42 +1,52 @@
 $class-prefix: "tabs";
 
-//.rayr-tab {}
+.ui-tabs{
+    width: 100%;
+}
 
 .#{$class-prefix}{
     &-bar{
-        margin-bottom: 16px;
+        text-align: center;        
+        font-size: 0;
     }
 
     &-nav{
         font-size: 14px;
-        &:after,
-        &:before{
-            display: table;
-            content: ' ';
-        }
-        &:after{
-            clear: both;
-        }
+        margin: 0;
+        padding: 0;
+        display: flex;
+        border-bottom: 1px solid #999999;
     }
 
     &-nav > &-tab{
         float: left;
         list-style-type: none;
-        margin-right: 24px;
         padding: 8px 20px;
         text-decoration: none;
         color: #666;
+        flex: 1;
         cursor: pointer;
-
         &:hover{
-            color: #00C49F;
+            color: #5797FB;
         }
     }
 
     &-nav > &-active{
-        border-bottom: 2px solid #00C49F;
-        color: #00C49F;
+        border-bottom: 2px solid #5797FB;
+        color: #ffffff;
+        background-color: #5797FB;
         cursor: default;
+        &:hover{
+            color: #ffffff;
+        }
+    }
+
+    &-content{
+        padding: 10px;
+        text-align: center;
+        border-right: 1px solid #999999;
+        border-left: 1px solid #999999;
+        border-bottom: 1px solid #999999;     
     }
 
     &-content &-panel{

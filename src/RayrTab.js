@@ -218,7 +218,7 @@ class TabContent extends React.Component {
         });
 
         return (
-            <div className={classes}>
+            <div className={classes} {...this.props.className}>
                 {this.getTabPanes()}
             </div>
         );
