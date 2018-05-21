@@ -75,7 +75,10 @@ function App() {
                             
                         }}>
                         <RayrTabPane key={`tab_0`} order={'0'} tab={'首页'}>
-                            Tab_1的内容
+                            <div>
+                                <h1>Tab Title</h1>
+                                <p>This is tab content...</p>
+                            </div>
                         </RayrTabPane>
                         <RayrTabPane key={`tab_1`} order={'1'} tab={'商城'}>
                             Tab_2的内容
