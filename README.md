@@ -15,12 +15,7 @@ npm install react-rayr-tab --save
 ```javascript
 import {RayrTab, RayrTabPane} from 'react-rayr-tab';
 
-<RayrTab
-    classPrefix={"tabs"}
-    defaultActiveIndex={0}
-    className="tab-wrapper"
-    onChange={(data)=>{
-    }}>
+<RayrTab classPrefix={"tabs"} defaultActiveIndex={0} className="tab-wrapper" onChange={(data)=>{}}>
         <RayrTabPane key={`tab_0`} order={'0'} tab={'tab1'}>
             tab1 content
         </RayrTabPane>
@@ -44,7 +39,7 @@ import {RayrTab, RayrTabPane} from 'react-rayr-tab';
 |----|----|----|
 |classPrefix| String | prefix of classname |
 |defaultActiveIndex|Number|order of default active tab|
-|className|String|customize style classname|
+|className|String|customize style classname|
 |onChange|Function|callback of tab change, will receive an object about prev index and active index|
 
 ### RayrTabPane
