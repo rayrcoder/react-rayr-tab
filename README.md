@@ -48,7 +48,7 @@ import {RayrTab, RayrTabPane} from 'react-rayr-tab';
 
 |name|type|desc|
 |----|----|----|
-|key|String|only key value of a tab panel|
+|key|String|unique key value of a tab panel|
 |order|String|the order number of tab&tab panel|
 |tab|String\|React Component|tab content,allow use string or a React Component|
 
