@@ -1,5 +1,7 @@
 # react-rayr-tab
 
+![Alt 展示图片](https://github.com/rayrcoder/react-rayr-tab/blob/master/src/imgs/demo1.png)
+
 ## Description
 
 base on react,a tab component.
