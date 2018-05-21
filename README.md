@@ -50,7 +50,7 @@ import {RayrTab, RayrTabPane} from 'react-rayr-tab';
 |order|String|the order number of tab&tab panel|
 |tab|String\|React Component|tab content,allow use string or a React Component|
 
-note: the tab panel content is add inner RayrTabPane component.Is the children node of RayrTabPane component.
+note: The tab panel content is add inner RayrTabPane component.Is the children node of RayrTabPane component.
 
 ## Note
 
