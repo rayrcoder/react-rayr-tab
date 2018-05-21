@@ -17,6 +17,7 @@ $prefix : 'mytab';
 .#{$prefix}{
     &-bar{
         width: 100%;
+        background-color: #ffffff;
     }
     &-bar &-nav{
         width: auto;
